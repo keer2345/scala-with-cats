@@ -87,6 +87,7 @@ in the IntelliJ online documentation.
 If you want to discuss the content or exercises with the authors,
 join us in our chat room on [Gitter][gitter].
 
+
 [cats-seed]: https://github.com/underscoreio/cats-seed.g8
 [underscore]: https://underscore.io
 [book]: https://underscore.io/books/advanced-scala

@@ -1,7 +1,7 @@
 name := "cats-sandbox"
 version := "0.0.1-SNAPSHOT"
 
-scalaVersion := "2.12.7"
+scalaVersion := "2.12.10"
 
 scalacOptions ++= Seq(
   "-encoding", "UTF-8",   // source files are in UTF-8
@@ -14,6 +14,10 @@ scalacOptions ++= Seq(
   "-Ypartial-unification" // allow the compiler to unify type constructors of different arities
 )
 
-libraryDependencies += "org.typelevel" %% "cats-core" % "1.4.0"
+scalacOptions in (Compile, console) ~= {
+  _.filterNot(Set("-Xlint"))
+}
 
-addCompilerPlugin("org.spire-math" %% "kind-projector" % "0.9.3")
+libraryDependencies += "org.typelevel" %% "cats-core" % "2.1.0"
+
+addCompilerPlugin("org.spire-math" %% "kind-projector" % "0.9.10")
