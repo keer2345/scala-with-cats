@@ -7,7 +7,7 @@
 
 **目录**
 
-0. Perface
+0. [Preface](https://github.com/keer2345/scala-with-cats/blob/master/ch00.md)
     - Versions
     - Conventions Used in This Book
     - Acknowledgements
